@@ -10,8 +10,6 @@ fun createNetwork(inputCount: Int, outputsCount: Int): BasicNetwork {
     val network = BasicNetwork()
     network.addLayer(BasicLayer(null, true, inputCount))
     network.addLayer(BasicLayer(inputCount))
-    network.addLayer(BasicLayer(inputCount))
-    network.addLayer(BasicLayer(inputCount))
     network.addLayer(BasicLayer(ActivationSigmoid(), false, outputsCount))
     network.structure.finalizeStructure()
     return network
