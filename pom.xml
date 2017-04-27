@@ -16,13 +16,6 @@
     <kotlin.version>1.1.1</kotlin.version>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>neuroph.sourceforge.net</id>
-      <url>http://neuroph.sourceforge.net/maven2/</url>
-    </repository>
-  </repositories>
-
   <dependencies>
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
@@ -31,16 +24,19 @@
     </dependency>
 
     <dependency>
-      <groupId>org.beykery</groupId>
-      <artifactId>neuroph</artifactId>
-      <version>2.92</version>
+      <groupId>org.meinkopf.jerminal</groupId>
+      <artifactId>jerminal-lib</artifactId>
+      <version>1.0.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/jerminal-lib-1.0.0.jar</systemPath>
     </dependency>
 
     <dependency>
-      <groupId>org.beykery</groupId>
-      <artifactId>neuroph-imgrec</artifactId>
-      <version>2.9</version>
+      <groupId>org.encog</groupId>
+      <artifactId>encog-core</artifactId>
+      <version>3.2.0</version>
     </dependency>
+
   </dependencies>
 
   <build>
